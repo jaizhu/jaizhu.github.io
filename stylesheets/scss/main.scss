@@ -1,0 +1,94 @@
+@import "_constants";
+
+html, body {
+	height: auto;
+	width: 100%;
+	margin: 0;
+}
+
+.bg {
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: $red;
+	z-index: -10;
+}
+
+.lato {
+	font-family: $lato;
+	font-weight: 300;
+}
+
+.shadows {
+	font-family: $shadows;
+}
+
+.line {
+	height: 0;
+	border: 1px solid $grey;
+	margin: 5px 0;
+}
+
+.content {
+	width: 50%;
+	margin: 5% 25%;
+	color: $grey;
+
+	.title {
+		font-size: 3em;
+	}
+
+	.subtitle {
+		margin-bottom: 2%;
+		font-size: 1.75em;
+	}
+
+	.post-container {
+		margin-top: 2%;
+		margin-bottom: 20px;
+		
+		.post {
+			border: 1px solid $grey;
+			padding: 1% 2% 2% 2%;
+			margin-bottom: 5%;
+
+			.post-title {
+				font-size: 1.5em;
+				display: inline-block;
+			}
+
+			.post-date {
+				font-size: 1.2em;
+				font-style: italic;
+				display: inline-block;
+				margin-top: 8px;
+			}
+
+			.post-text {
+				margin-top: 15px;
+				text-align: justify;
+			}
+		}
+	}
+
+	.button-container {
+		width: 100%;
+		text-align: center;
+
+		button {
+			border: none;
+			border-radius: 0;
+			background: none;
+			color: $grey;
+			width: 60px;
+			transition: all 300ms ease;
+		}
+
+		button:hover {
+			color: $red;
+			background: $grey;
+		}
+	}
+}
