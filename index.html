@@ -143,7 +143,7 @@ body, html {
 </div>
 
 <!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+<div class="w3-container w3-light-grey" style="padding:128px 160px" id="contact">
   <h3 class="w3-center">CONTACT</h3>
   <p class="w3-center w3-large">Lets get in touch.</p>
   <div class="w3-row-padding" style="margin-top:64px">
@@ -153,21 +153,21 @@ body, html {
       <p><i class="fa fa-linkedin-square fa-fw w3-xxlarge w3-margin-right"></i> LinkedIn: <a href="https://www.linkedin.com/in/jaimiezhu/">Connect</a>
       <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: zhu.jaimie@gmail.com</p>
       <br>
-      <form action="/action_page.php" target="_blank">
+      <!-- <form action="/action_page.php" target="_blank" id="contact_form">
         <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
         <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
         <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
         <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
         <p>
-          <button class="w3-button w3-black" type="submit">
+          <button class="w3-button w3-black" type="submit" id="contact_button">
             <i class="fa fa-paper-plane"></i> SEND MESSAGE
           </button>
         </p>
-      </form>
+      </form> -->
     </div>
     <div class="w3-half">
       <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;"></div>
+      <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:400px;"></div>
     </div>
   </div>
 </div>
@@ -227,6 +227,7 @@ function w3_close() {
     mySidebar.style.display = "none";
 }
 </script>
+
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQQQZNZLunDSCOcQy4cxD4SnKs2DQxLGk&callback=initMap">
 </script>
