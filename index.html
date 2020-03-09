@@ -85,7 +85,7 @@ body, html {
     <div class="w3-quarter">
       <i class="fa fa-image w3-margin-bottom w3-jumbo"></i>
       <p class="w3-large">Background</p>
-      <p>I hail from the lovely city of Boulder, Colorado. I went to school at the University of Michigan (go blue!), and am now living in the Seattle area. As someone who grew up very close to the mountains, I love exploring the outdoors and enjoying nature!</p>
+      <p>I hail from the lovely city of Boulder, Colorado. I went to school at the University of Michigan (go blue!), and am now living in the Bay area after a two year stint in Seattle. As someone who grew up very close to the mountains, I love exploring the outdoors and enjoying nature!</p>
     </div>
 
     <div class="w3-quarter">
@@ -190,10 +190,11 @@ body, html {
 <script>
 function initMap()
 {
-    var fb_sea = {lat: 47.6288832, lng: -122.3447951};
+    
+    var fb_sf = {lat: 37.7898, lng: -122.3954};
     var map = new google.maps.Map(document.getElementById('googleMap'), {
         zoom: 8,
-        center: fb_sea
+        center: fb_sf
     });
     var marker = new google.maps.Marker({
         position: fb_sea,
